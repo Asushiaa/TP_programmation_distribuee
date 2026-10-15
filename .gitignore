@@ -1,0 +1,20 @@
+
+# Fichiers temporaires Python
+__pycache__/
+*.py[cod]
+
+# Environnements Python locaux
+.venv/
+venv/
+
+# Secrets et configuration locale
+.env
+.env.*
+
+# Fichiers de tests
+.pytest_cache/
+.coverage
+
+# Fichiers système
+.DS_Store
+Thumbs.db
