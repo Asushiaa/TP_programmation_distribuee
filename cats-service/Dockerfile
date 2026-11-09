@@ -2,14 +2,16 @@
 FROM python:3.12-slim
 
 WORKDIR /app
+
 ENV PYTHONPATH=/app
 
 COPY requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY cats-service/entity ./entity
-COPY cats-service/service ./service
-COPY cats-service/web ./web
+COPY entity ./entity
+COPY service ./service
+COPY web ./web
 
 EXPOSE 5000
 
